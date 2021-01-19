@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="errorstyle.css">
+    <title>404 ERROR PAGE</title>
+</head>
+<body>
+    <section>
+       <div class="headerr"></div> 
+<div data-speed="5" class="layer"><div class="hollowcircle"></div>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </div>
+<div data-speed="-3" class="layer"><div class="irregularplus"></div></div>
+<div data-speed="-8" class="layer"><div class="rect70"></div></div>
+<div data-speed="8" class="layer"><div class="rect40"></div></div>
+<div data-speed="-2" class="layer"><div class="triangle-right"></div></div>
+<div data-speed="7" class="layer"><div class="rect100"></div></div>
+<div data-speed="-9" class="layer"><div class="rect40"></div></div>
+<div data-speed="5" class="layer"><div class="rect20"></div></div>
+<div data-speed="-7" class="layer"><div class="plus"></div></div>
+<div data-speed="-4" class="layer"><div class="rhombus"></div></div><br><br>
+<div data-speed="-6" class="layer"><pre>       </pre><div class="rect10"></div></div>
+<div data-speed="3" class="layer"><div class="rect10"></div></div>
+<div data-speed="-8" class="layer"><div class="rect10"></div></div>
+<div data-speed="2" class="layer"><div class="rect10"></div></div>
+<div data-speed="-5" class="layer"><div class="rect100"></div></div><span style="display:inline-block; width: 700px;"></span>
+<div data-speed="-9" class="layer"><div class="rect10"></div></div>
+<div data-speed="9" class="layer"><div class="rect20"></div></div>
+<div data-speed="-5" class="layer"><div class="rect100"></div></div><br>
+<div data-speed="-3" class="layer"><div style="margin-bottom:100px;" class="rect100"></div></div>
+<div data-speed="3" class="layer"><div class="rect90"></div> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</div>
+<div data-speed="-5" class="layer"><div class="dottedcircle"></div></div>
+<div data-speed="3" class="layer"><div class="rect10"></div></div>
+<div data-speed="-3" class="layer"><div class="rect10"></div></div>
+<div data-speed="-9" class="layer"><div class="rect10"></div></div>
+<div data-speed="-3" class="layer"><div class="rect100"></div></div>
+<div data-speed="3" class="layer"><div class="rect10"></div></div>
+<div data-speed="-7" class="layer"><div class="rect10"></div> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</div>
+<div data-speed="2" class="layer"><div class="hollowsquare"></div></div>
+<div data-speed="-4" class="layer"><div class="triangle-up"></div></div>
+<div class="layer" data-speed="-9"><div class="circlewithplus">+ </div></div>
+<div data-speed="10" class="layer"><div class="rect100"></div></div>
+<div data-speed="-5" class="layer"><div class="rect10"></div></div>
+<div data-speed="9" class="layer"><div class="rect10"></div></div>
+<div data-speed="-3" class="layer"><div class="rect60"></div></div>
+<div data-speed="9" class="layer"><div class="rect40"></div>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </div><span style="display:inline-block; width:300px;"></span>
+<div data-speed="-7" class="layer"><div class="hollowtriangle"><div class="empty"></div></div></div>
+<div data-speed="8" class="layer"><div class="rect60"></div></div>
+<div data-speed="-9" class="layer"><div class="rect10"></div></div>
+<div data-speed="9" class="layer"><div class="rect10"></div></div>
+<div data-speed="5" class="layer"><div class="cross">X</div></div>
+<div data-speed="-5" class="layer"><div class="rect10"></div></div>
+<div data-speed="-9" class="layer"><div class="rect20"></div></div>
+<div data-speed="-3" class="layer"><div class="rect100"></div></div>
+<div data-speed="2" class="layer"><div class="hollowcircle"></div></div>
+<div data-speed="-7" class="layer"><div style="margin-left: 0;"class="hollowcircle"></div></div>
+<div data-speed="-9" class="layer"><div  style="margin-left: 0;" class="hollowcircle"></div></div>
+<div data-speed="-6" class="layer"><div class="rect160"></div></div>
+<div data-speed="8" class="layer"><div class="rect20"></div></div>
+<div data-speed="-9" class="layer"><div class="rect100"></div></div>
+<div data-speed="9" class="layer"><div class="rhombus"></div></div>
+
+<div class="content"><p class="title1">404</p><h5 class="title2">PAGE NOT FOUND</h5></div>
+<div class="footerr"></div>
+
+    </section>
+    <script type="text/javascript">
+        document.addEventListener("mousemove", parallax);
+        function parallax(e){
+            this.querySelectorAll('.layer').forEach(layer => {
+                const speed = layer.getAttribute('data-speed')
+
+                const x = (window.innerWidth - e.pageX*speed)/100
+                const y = (window.innerHeight - e.pageY*speed)/100
+
+                layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+            });
+        }
+    </script>
+</body>
+</html>
